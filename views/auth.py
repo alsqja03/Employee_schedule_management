@@ -34,7 +34,7 @@ def get_setting(name: str, default=None):
 def get_redirect_url() -> str:
     return get_setting(
         "APP_URL",
-        "http://localhost:8501"
+        "https://crew-fit.streamlit.app/"
     )
 
 
