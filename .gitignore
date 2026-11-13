@@ -1,0 +1,150 @@
+# Environment Variables & Secrets
+
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+.envrc
+.pypirc
+
+# Python & Virtual Environments
+
+__pycache__/
+*.py[cod]
+*.py[codz]
+*$py.class
+*.so
+
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging & Distribution
+
+.Python
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+__pypackages__/
+
+# PyInstaller / Tools
+*.manifest
+*.spec
+tempCodeRunnerFile.py
+
+# Package Managers Config / Cache
+.pdm-python
+.pdm-build/
+.pixi
+
+# Databases & Services
+
+*.db
+*.sqlite
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+
+# Celery, Redis, RabbitMQ, ActiveMQ
+celerybeat-schedule
+celerybeat.pid
+*.rdb
+*.aof
+*.pid
+mnesia/
+rabbitmq/
+rabbitmq-data/
+activemq-data/
+
+# IDEs & Operating Systems
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+.spyderproject
+.spyproject
+.ropeproject
+
+# Testing, Coverage & Type Checkers
+
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Frameworks, Docs & Logs
+
+pip-log.txt
+pip-delete-this-directory.txt
+*.log
+logs/
+*.tmp
+*.bak
+
+# Django & Flask & Scrapy & Sphinx
+local_settings.py
+instance/
+.webassets-cache
+.scrapy
+docs/_build/
+
+# Jupyter & Marimo & Other Tools
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+*.sage.py
+/site
+.pybuilder/
+target/
+.abstra/
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+
+# Media & User Uploads
+uploads/
+media/
+
+# Project Specific
+
+config.py
+data/*.csv
+!data/sample.csv

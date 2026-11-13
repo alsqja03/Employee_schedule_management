@@ -1,0 +1,162 @@
+/* The menu container is present only on the My Page landing screen. */
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) {
+    --mypage-border: #818181;
+    --mypage-ink: #161616;
+    --mypage-surface: #fff;
+}
+
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-crewfit_logo [data-testid="stImage"] {
+    justify-content: flex-start;
+    padding-bottom: 0;
+}
+
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) h1 {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 800;
+    padding: 0;
+}
+
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-crewfit_profile {
+    border: 1px solid var(--mypage-border);
+    border-radius: 14px;
+    background: var(--mypage-surface);
+    color: var(--mypage-ink);
+    padding: 0.9rem clamp(1rem, 3vw, 2rem);
+}
+
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-crewfit_profile img,
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .crewfit-avatar {
+    width: 76px;
+    height: 76px;
+}
+
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .crewfit-avatar {
+    background: #aeb9ff;
+    color: #263257;
+}
+
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-home_logout button {
+    min-height: 38px;
+    border: 0;
+    border-radius: 999px;
+    background: #ffa8a8;
+    color: var(--mypage-ink);
+    font-weight: 750;
+}
+
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-home_logout button:hover {
+    background: #ff9292;
+}
+
+.st-key-crewfit_mypage_menu {
+    width: 100%;
+    max-width: 680px;
+    margin: 1rem auto 0;
+}
+
+.st-key-crewfit_mypage_menu button {
+    min-height: 82px;
+    gap: 0.75rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--mypage-border);
+    border-radius: 14px;
+    background: var(--mypage-surface);
+    color: var(--mypage-ink);
+}
+
+.st-key-crewfit_mypage_menu button p {
+    font-size: 1rem;
+    font-weight: 750;
+}
+
+.st-key-crewfit_mypage_menu button:hover {
+    border-color: #5464a8;
+    background: #f3f5ff;
+    color: #232e66;
+}
+
+@media (max-width: 640px) {
+    .st-key-crewfit_mypage_menu button {
+        min-height: 64px;
+        justify-content: flex-start;
+        padding-inline: 1rem;
+    }
+
+    .st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-crewfit_profile [data-testid="stHorizontalBlock"] {
+        flex-wrap: nowrap;
+    }
+
+    .st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-crewfit_profile [data-testid="stColumn"] {
+        flex: 1 1 auto;
+        width: auto;
+    }
+
+    .st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-crewfit_profile img,
+    .st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .crewfit-avatar {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* Keep the heading adjacent to the logo and the account card. */
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) [data-testid="stVerticalBlock"]:has(> [data-testid="stHeading"]) {
+    gap: 0.65rem;
+}
+
+.st-key-crewfit_mypage_menu [data-testid="stVerticalBlock"] {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(0.65rem, 2.5vw, 1.8rem);
+}
+
+.st-key-crewfit_mypage_menu {
+    max-width: 620px;
+    margin: 1.7rem auto 0.7rem;
+}
+
+.st-key-crewfit_mypage_menu button {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.st-key-crewfit_mypage_menu button::before {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 50%;
+    background: #dedede;
+    font-size: 1.15rem;
+}
+
+.st-key-mypage_profile_edit button::before { content: "✏️" / ""; }
+.st-key-mypage_employee button::before { content: "👷" / ""; }
+.st-key-mypage_withdraw button::before { content: "🚨" / ""; }
+
+.st-key-mypage_home {
+    margin-top: 0.75rem;
+}
+
+@media (max-width: 640px) {
+    .st-key-crewfit_mypage_menu [data-testid="stVerticalBlock"] {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .st-key-crewfit_mypage_menu button {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 360px) {
+    .st-key-crewfit_home:has(.st-key-crewfit_mypage_menu) .st-key-crewfit_profile [data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap;
+    }
+}

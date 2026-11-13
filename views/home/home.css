@@ -1,0 +1,89 @@
+.block-container:has(.st-key-crewfit_home) {
+    max-width: 970px;
+    padding: clamp(2.5rem, 8vh, 6rem) clamp(1rem, 4vw, 3rem) 3rem;
+}
+
+.st-key-crewfit_home > [data-testid="stVerticalBlock"] {
+    gap: 1.75rem;
+}
+
+.st-key-crewfit_logo [data-testid="stImage"] {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.st-key-crewfit_logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.st-key-crewfit_profile {
+    border-color: #adc5cf;
+    border-radius: 1.2rem;
+    padding: 1.15rem 1.3rem;
+}
+
+.st-key-crewfit_profile [data-testid="stImage"] img,
+.crewfit-avatar {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.crewfit-avatar {
+    display: grid;
+    place-items: center;
+    color: #195765;
+    background: #d7edf0;
+    font: 700 1rem system-ui, sans-serif;
+}
+
+.st-key-crewfit_profile [data-testid="stText"] {
+    font-family: inherit;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.st-key-crewfit_profile [data-testid="stText"]:first-child {
+    font-weight: 700;
+}
+
+.st-key-home_logout button {
+    border-color: #f1bfc0;
+    background: #fff1f1;
+    color: #8e3039;
+}
+
+.st-key-crewfit_home [class*="st-key-crewfit_card_"] button {
+    min-height: 6rem;
+    border-color: #adc5cf;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+.st-key-crewfit_home [class*="st-key-crewfit_card_"] button:hover {
+    background: #e6f5f5;
+    border-color: #48999e;
+    color: #185b66;
+}
+
+.st-key-crewfit_home [class*="st-key-crewfit_card_"] [data-testid="stCaptionContainer"] {
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .st-key-crewfit_home [data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap;
+    }
+
+    .st-key-crewfit_home [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .st-key-crewfit_home [class*="st-key-crewfit_card_"] button {
+        min-height: 3.5rem;
+    }
+}
